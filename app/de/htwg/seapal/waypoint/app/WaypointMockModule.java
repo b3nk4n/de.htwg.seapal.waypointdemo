@@ -12,12 +12,13 @@ import de.htwg.seapal.waypoint.models.mock.Waypoint;
  * @author Felix
  *
  */
-public class WaypointMockModule extends AbstractModule {
+public class WaypointMockModule extends WaypointBaseModule {
 
 	@Override
 	protected void configure() {
+		super.configure();
+		
 		bind(IWaypoint.class).to(Waypoint.class);
 		bind(IWaypointController.class).to(WaypointController.class);
-
 	}
 }

@@ -9,7 +9,7 @@ import de.htwg.seapal.waypoint.models.IWaypoint;
 import de.htwg.seapal.waypoint.models.IWaypoint.ForeSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.MainSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.Maneuver;
-import de.htwg.util.observer.IObservable;
+import de.htwg.seapal.common.observer.IObservable;
 
 /**
  * Represents a waypoint.

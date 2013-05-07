@@ -14,7 +14,9 @@ import de.htwg.seapal.waypoint.models.IWaypoint.ForeSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.MainSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.Maneuver;
 import de.htwg.seapal.waypoint.models.impl.Waypoint;
-import de.htwg.util.observer.Observable;
+import de.htwg.seapal.common.observer.Observable;
+import de.htwg.seapal.common.observer.Event;
+import de.htwg.seapal.common.observer.IObserver;
 
 /**
  * Implements the common default behaviour.
@@ -221,5 +223,4 @@ implements IWaypointController {
 		return new LinkedList<IWaypoint>(
 				persistenceController.loadWaypoints().values());
 	}
-
 }

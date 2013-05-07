@@ -44,11 +44,8 @@ public class WaypointGlobal extends GlobalSettings implements Initializable {
 			@Override
 			public Html execute(Object nothing) {
 				StringBuilder builder = new StringBuilder();
-				builder.append("<a href=\">")
-					.append(de.htwg.seapal.waypoint.controllers.routes.PlayWaypointController.test())
-					.append("\">")
-					.append("Trip")
-					.append("</a>");
+				builder.append(String.format("<a href=\"%s\">Waypoint</a>",
+						de.htwg.seapal.waypoint.controllers.routes.PlayWaypointController.test().url()));
 				
 				return new Html(builder);
 			}

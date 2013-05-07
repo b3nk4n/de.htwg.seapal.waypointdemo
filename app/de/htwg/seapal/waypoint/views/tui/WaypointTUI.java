@@ -12,9 +12,9 @@ import de.htwg.seapal.waypoint.models.IWaypoint;
 import de.htwg.seapal.waypoint.models.IWaypoint.ForeSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.MainSail;
 import de.htwg.seapal.waypoint.models.IWaypoint.Maneuver;
-import de.htwg.util.observer.Event;
-import de.htwg.util.observer.IObserver;
-import de.htwg.util.plugin.Plugin;
+import de.htwg.seapal.common.observer.Event;
+import de.htwg.seapal.common.observer.IObserver;
+import de.htwg.seapal.common.plugin.Plugin;
 
 public class WaypointTUI implements IObserver, Plugin {
 
