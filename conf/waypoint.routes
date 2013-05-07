@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           de.htwg.seapal.waypoint.controllers.PlayWaypointController.index()
+GET		/test						@de.htwg.seapal.waypoint.controllers.PlayWaypointController.test()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
