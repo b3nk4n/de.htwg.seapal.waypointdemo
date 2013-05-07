@@ -15,7 +15,8 @@ object ApplicationBuild extends Build {
 		"com.google.inject.extensions" % "guice-multibindings" % "3.0",
 		"de.htwg.seapal" % "common" % "1.0-SNAPSHOT",
 		"de.htwg.seapal" % "mark" % "1.0-SNAPSHOT",
-    	"com.db4o" % "db4o-full-java5" % "8.1-SNAPSHOT"
+    	"com.db4o" % "db4o-full-java5" % "8.1-SNAPSHOT",
+    	"org.ektorp" % "org.ektorp" % "1.3.0"
 	)
 
   	val main = play.Project(appName, appVersion, appDependencies).settings(
